@@ -248,13 +248,13 @@ export default function Clock() {
       </div>
 
       {/* 信息和数字时间显示区域 */}
-      <div className="flex flex-col items-center space-y-6 mt-6">
+      <div className="glass rounded-[10px] flex flex-col items-center space-y-6 mt-6">
         <div className="mb-4">
-          <div className="glass rounded-full px-8 py-3 text-center shadow-lg text-indigo-500 dark:text-indigo-300 inline-block text-sm animate-pulse backdrop-blur-md bg-white/30 border border-white/40">
+          <div className="px-8 py-3 text-center shadow-lg text-indigo-500 dark:text-indigo-300 inline-block text-sm animate-pulse">
             ✨ Watch the magic in 60 seconds ✨
           </div>
         </div>
-        <div className="glass rounded-xl px-8 py-4 text-center shadow-lg min-w-[240px] mt-4 backdrop-blur-md bg-white/30 border border-white/40">
+        <div className="px-8 py-4 text-center shadow-lg min-w-[240px] mt-4">
           <div className="text-2xl font-mono font-semibold text-gray-700 dark:text-gray-200">
             {time.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', second: '2-digit' })}
           </div>
